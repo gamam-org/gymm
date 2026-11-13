@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>منظمة قمم للسلام والتنمية</title>
+<style>
+:root{--g:#0f766e;--d:#134e4a;--l:#f0fdfa;--t:#1f2937}
+*{box-sizing:border-box}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;color:var(--t);background:#fff;line-height:1.9}
+header{background:var(--d);color:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0}
+header b{font-size:16px}
+#lang{background:#fff;color:var(--d);border:0;padding:8px 14px;border-radius:8px;font-size:14px}
+.hero{background:var(--g);color:#fff;text-align:center;padding:48px 20px}
+.hero h1{margin:0 0 10px;font-size:26px}
+.hero p{margin:0;font-size:16px}
+section{padding:32px 18px;max-width:720px;margin:auto}
+h2{color:var(--d);border-bottom:3px solid var(--g);display:inline-block;margin:0 0 14px;font-size:21px}
+.card{background:var(--l);border-radius:14px;padding:16px;margin-bottom:14px}
+.card h3{margin:0 0 6px;color:var(--g);font-size:18px}
+.card small{color:#6b7280}
+footer{background:var(--d);color:#fff;text-align:center;padding:24px 16px}
+footer a{color:#fff}
+</style>
+</head>
+<body>
+<header>
+  <b data-ar="قمم للسلام والتنمية" data-en="Gimam">قمم للسلام والتنمية</b>
+  <button id="lang">English</button>
+</header>
 
+<div class="hero">
+  <h1 data-ar="منظمة قمم للسلام والتنمية" data-en="Gimam Organization for Peace and Development">منظمة قمم للسلام والتنمية</h1>
+  <p data-ar="منظمة تطوعية مجتمعية، جنوب كردفان" data-en="A volunteer community organization, South Kordofan">منظمة تطوعية مجتمعية، جنوب كردفان</p>
+</div>
+
+<section>
+  <h2 data-ar="من نحن" data-en="About Us">من نحن</h2>
+  <p data-ar="تأسست منظمة قمم للسلام والتنمية في أكتوبر 2021 بولاية جنوب كردفان، وتعمل عبر ورش ومنتديات للتوعية وأنشطة اجتماعية وتنموية مرتبطة بالمجتمع المحلي."
+     data-en="Gimam Organization for Peace and Development was founded in October 2021 in South Kordofan. It works through awareness workshops and forums, and social and development activities tied to the local community.">
+     تأسست منظمة قمم للسلام والتنمية في أكتوبر 2021 بولاية جنوب كردفان، وتعمل عبر ورش ومنتديات للتوعية وأنشطة اجتماعية وتنموية مرتبطة بالمجتمع المحلي.</p>
+</section>
+
+<section>
+  <h2 data-ar="الأنشطة المنفذة" data-en="Executed Activities">الأنشطة المنفذة</h2>
+
+  <div class="card">
+    <h3 data-ar="منتدى العون القانوني" data-en="Legal Aid Forum">منتدى العون القانوني</h3>
+    <small data-ar="سبتمبر 2021" data-en="September 2021">سبتمبر 2021</small>
+    <p data-ar="جلسة حوار للتوعية القانونية: حقوق المواطن، الأوراق الثبوتية، نزاعات المزارع والراعي، والتعدين التقليدي. يسّرها الدكتور مرتضى حسن (طيّب الله ثراه)."
+       data-en="A dialogue session on legal awareness: citizen rights, identity documents, farmer and herder disputes, and traditional mining. Facilitated by Dr. Murtada Hassan (may God rest his soul).">
+       جلسة حوار للتوعية القانونية: حقوق المواطن، الأوراق الثبوتية، نزاعات المزارع والراعي، والتعدين التقليدي. يسّرها الدكتور مرتضى حسن (طيّب الله ثراه).</p>
+  </div>
+
+  <div class="card">
+    <h3 data-ar="مشروع البطاقة" data-en="ID Card Project">مشروع البطاقة</h3>
+    <small data-ar="9 أكتوبر 2021" data-en="9 October 2021">9 أكتوبر 2021</small>
+    <p data-ar="معسكر لاستخراج الرقم الوطني بقرية الحجر الأبيض، بدعم من القيادات المحلية ومشاركة أفراد المجتمع."
+       data-en="A camp for issuing national ID numbers in Al-Hajar Al-Abyad village, supported by local leaders and community members.">
+       معسكر لاستخراج الرقم الوطني بقرية الحجر الأبيض، بدعم من القيادات المحلية ومشاركة أفراد المجتمع.</p>
+  </div>
+</section>
+
+<footer>
+  <p data-ar="للتواصل" data-en="Contact">للتواصل</p>
+  <a href="tel:0122867705">0122867705</a>
+</footer>
+
+<script>
+var lang='ar';
+document.getElementById('lang').onclick=function(){
+  lang=(lang==='ar')?'en':'ar';
+  document.documentElement.lang=lang;
+  document.documentElement.dir=(lang==='ar')?'rtl':'ltr';
+  this.textContent=(lang==='ar')?'English':'العربية';
+  document.querySelectorAll('[data-ar]').forEach(function(e){
+    e.textContent=e.getAttribute('data-'+lang);
+  });
+};
+</script>
+</body>
+</htm docx
